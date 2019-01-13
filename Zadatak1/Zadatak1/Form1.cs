@@ -15,7 +15,6 @@ namespace Zadatak1
 {
     public partial class Form1 : Form
     {
-        public string outputFilePath { get; set; }
         List<string> redosljedSkokova = new List<string>();
         public Form1()
         {
@@ -423,9 +422,9 @@ namespace Zadatak1
             
             btnPokreniAlgoritam.Enabled = false;
             redosljedSkokova.Clear();
-            System.Diagnostics.Process process = new System.Diagnostics.Process();
-            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            Process process = new Process();
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
             startInfo.FileName = "cmd.exe";
             
             OpenFileDialog pythonDatoteka = new OpenFileDialog();
@@ -441,14 +440,10 @@ namespace Zadatak1
                 startInfo.Arguments = "/C python KnightsTour.py > output.txt";
                 process.StartInfo = startInfo;
                 process.Start();
+
+                string outputFilePath = putanjaPlusImeDatoteke.Replace("KnightsTour.py", "output.txt");
                 string koordinata;
 
-                //outputFilePath = putanjaPlusImeDatoteke.Replace("KnightsTour.py", "output.txt");
-                var files = Directory.GetFiles(putanja);
-                foreach (var f in files)
-                {
-                    if (f.Contains("output")) outputFilePath= putanjaPlusImeDatoteke.Replace("KnightsTour.py", "output.txt");
-                }
                 if (File.Exists(outputFilePath))
                 {
                     StreamReader file = new StreamReader(outputFilePath);
