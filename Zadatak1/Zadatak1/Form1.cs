@@ -440,7 +440,9 @@ namespace Zadatak1
                 startInfo.Arguments = "/C python KnightsTour.py > output.txt";
                 process.StartInfo = startInfo;
                 process.Start();
+
                 Thread.Sleep(1000);
+
                 string outputFilePath = putanjaPlusImeDatoteke.Replace("KnightsTour.py", "output.txt");
                 string koordinata;
 
@@ -452,6 +454,7 @@ namespace Zadatak1
                         redosljedSkokova.Add(koordinata);
                     }
                     file.Close();
+
                     AnimacijaTure();
                     btnReset.Enabled = true;
                 }

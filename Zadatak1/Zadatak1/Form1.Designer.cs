@@ -111,6 +111,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.btnPokreniAlgoritam = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // A8
@@ -1048,12 +1049,26 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(652, 245);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(136, 126);
+            this.textBox1.TabIndex = 82;
+            this.textBox1.Text = "Datoteka KnightsTour.py nalazi se u instalacijskoj mapi. Kako bi se algoritam izv" +
+    "ršio potrebno je imati instaliran Python 3.";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(800, 635);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnPokreniAlgoritam);
             this.Controls.Add(this.label13);
@@ -1229,6 +1244,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btnPokreniAlgoritam;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
