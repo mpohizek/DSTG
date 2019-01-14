@@ -440,6 +440,7 @@ namespace Zadatak1
                 startInfo.Arguments = "/C python KnightsTour.py > output.txt";
                 process.StartInfo = startInfo;
                 process.Start();
+                process.Dispose();
 
                 Thread.Sleep(1000);
 
