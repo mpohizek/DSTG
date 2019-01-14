@@ -45,8 +45,7 @@ class KonjicevaTura:
             redoslijed_skokova = self.warnsdorf(sljedeci_vrh)
             for susjed in redoslijed_skokova:
                 self.tour(nivo_stabla + 1, staza, susjed)
-            # Mislim da iduca linija nije potrebna
-            # self.sahovska_ploca[sljedeci_vrh[0]][sljedeci_vrh[1]] = 0  # resetiranje
+            self.sahovska_ploca[sljedeci_vrh[0]][sljedeci_vrh[1]] = 0  # resetiranje
 
 
 konjicevaTura = KonjicevaTura()

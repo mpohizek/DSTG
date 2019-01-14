@@ -419,7 +419,7 @@ namespace Zadatak1
 
         private void btnPokreniAlgoritam_Click(object sender, EventArgs e)
         {
-            
+            btnReset.Enabled = false;            
             btnPokreniAlgoritam.Enabled = false;
             redosljedSkokova.Clear();
             Process process = new Process();
@@ -440,7 +440,7 @@ namespace Zadatak1
                 startInfo.Arguments = "/C python KnightsTour.py > output.txt";
                 process.StartInfo = startInfo;
                 process.Start();
-
+                Thread.Sleep(1000);
                 string outputFilePath = putanjaPlusImeDatoteke.Replace("KnightsTour.py", "output.txt");
                 string koordinata;
 
