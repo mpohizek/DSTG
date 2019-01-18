@@ -16,11 +16,15 @@ public class Program : MonoBehaviour {
     {
         inputFieldPath = GameObject.Find("putanja").GetComponent<InputField>() as InputField;
         tbIspis = GameObject.FindGameObjectWithTag("ispis").GetComponent<Text>() as Text;
+//#if !UNITY_EDITOR
+            inputFieldPath.Select();
+            inputFieldPath.ActivateInputField();
+        //#endif
     }
 
     public void btnUcitajLabirint_Click()
     {
-        tbIspis.text = "Button učitaj labirint";
+        tbIspis.text = "Unesite putanju do .txt datoteke";
         //string path = EditorUtility.OpenFilePanel("Select labyrinth to solve", "", "txt");
         string path = inputFieldPath.text;
 
@@ -52,6 +56,9 @@ public class Program : MonoBehaviour {
 
     public void btnRijesiLabirint_Click()
     {
+        inputFieldPath.Select();
+        inputFieldPath.ActivateInputField();
+
         tbIspis.text = "Button riješi labirint";
         m.Search();
 
