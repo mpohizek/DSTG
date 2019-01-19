@@ -126,5 +126,6 @@ namespace Zadatak3
             }
             txtRjesenjeOutput.Text = "(broj kanibala lijevo, broj misionara lijevo, čamac lijevo --> 1 | čamac desno --> 0)" + Environment.NewLine + "(3, 3, 1)" + Environment.NewLine + txtRjesenjeOutput.Text;
         }
+
     }
 }

@@ -35,17 +35,19 @@
             // 
             // txtRjesenjeOutput
             // 
-            this.txtRjesenjeOutput.Location = new System.Drawing.Point(40, 13);
+            this.txtRjesenjeOutput.Location = new System.Drawing.Point(24, 8);
+            this.txtRjesenjeOutput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRjesenjeOutput.Multiline = true;
             this.txtRjesenjeOutput.Name = "txtRjesenjeOutput";
-            this.txtRjesenjeOutput.Size = new System.Drawing.Size(648, 283);
+            this.txtRjesenjeOutput.Size = new System.Drawing.Size(390, 185);
             this.txtRjesenjeOutput.TabIndex = 0;
             // 
             // btnPokreniAlgoritam
             // 
-            this.btnPokreniAlgoritam.Location = new System.Drawing.Point(298, 328);
+            this.btnPokreniAlgoritam.Location = new System.Drawing.Point(119, 212);
+            this.btnPokreniAlgoritam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPokreniAlgoritam.Name = "btnPokreniAlgoritam";
-            this.btnPokreniAlgoritam.Size = new System.Drawing.Size(90, 59);
+            this.btnPokreniAlgoritam.Size = new System.Drawing.Size(168, 38);
             this.btnPokreniAlgoritam.TabIndex = 1;
             this.btnPokreniAlgoritam.Text = "Pokreni algoritam";
             this.btnPokreniAlgoritam.UseVisualStyleBackColor = true;
@@ -53,14 +55,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 423);
+            this.ClientSize = new System.Drawing.Size(430, 275);
             this.Controls.Add(this.btnPokreniAlgoritam);
             this.Controls.Add(this.txtRjesenjeOutput);
-            this.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "Form1";
             this.Text = "Missionaries & Cannibals";
             this.ResumeLayout(false);
